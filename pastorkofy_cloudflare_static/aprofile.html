@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pastor Kofy - Ministry Profile</title>
+    <meta name="description" content="Minimal ministry profile and latest public updates for Pastor Kofy.">
+    <link rel="icon" type="image/png" href="assets/icons/gold_microphone.png">
+    <link rel="apple-touch-icon" href="assets/icons/gold_microphone.png">
+    <style>
+        :root {
+            --bg: #050200;
+            --panel: rgba(255, 255, 255, 0.04);
+            --text: #ffffff;
+            --muted: rgba(255, 255, 255, 0.72);
+            --line: rgba(255, 215, 0, 0.2);
+            --accent: #ffd700;
+            --accent-2: #ff9f1a;
+            --max: 920px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: radial-gradient(circle at 90% 0%, rgba(255, 215, 0, 0.1), transparent 35%), var(--bg);
+            color: var(--text);
+            padding: 24px 16px 48px;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: clamp(24px, 4vw, 34px);
+        }
+
+        .badge {
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            background: rgba(255, 215, 0, 0.14);
+            color: var(--accent);
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            background: var(--panel);
+            border-radius: 16px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 14px;
+            align-items: start;
+        }
+
+        .profile img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            aspect-ratio: 4/5;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .summary {
+            display: grid;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .summary div {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            border-top: 1px solid var(--line);
+            padding-top: 8px;
+        }
+
+        .summary strong {
+            color: var(--text);
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .news {
+            display: grid;
+            gap: 10px;
+        }
+
+        .news a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .news a:hover {
+            color: var(--accent);
+        }
+
+        .news-item {
+            border-top: 1px solid var(--line);
+            padding-top: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery a {
+            text-decoration: none;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery p {
+            padding: 8px;
+            font-size: 13px;
+        }
+
+        .actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 9px 12px;
+        }
+
+        .btn.primary {
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            color: #fff;
+        }
+
+        .btn.alt {
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.04);
+            color: #fff;
+        }
+
+        @media (max-width: 760px) {
+            .profile {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+        <section class="top">
+            <h1>Ministry Profile</h1>
+            <span class="badge">Updated Mar 5, 2026</span>
+        </section>
+
+        <section class="card profile">
+            <img src="assets/images/KOFY.png" alt="Pastor Kofy portrait"
+                onerror="this.src='https://img.youtube.com/vi/lj-ewqtged8/hqdefault.jpg'">
+            <div>
+                <h2>Pastor Kofy</h2>
+                <p>Gospel musician, worship minister, and event host focused on worship gatherings and ministry media.
+                </p>
+                <div class="summary">
+                    <div><span>Focus</span><strong>Events, Songs, Outreach</strong></div>
+                    <div><span>Latest Signal</span><strong>Release listed Nov 24, 2025</strong></div>
+                    <div><span>Brand Direction</span><strong>Event-centered ministry</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Latest Public Updates</h2>
+            <div class="news">
+                <div class="news-item">
+                    <a href="https://music.apple.com/us/artist/pastor-kofy/1449150598" target="_blank"
+                        rel="noopener noreferrer">Apple Music artist page lists "ME NSA AKA - Single"</a>
+                    <p>Apple Music • November 24, 2025</p>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.youtube.com/watch?v=lj-ewqtged8" target="_blank" rel="noopener noreferrer">Praiz
+                        Experience 2025 performance coverage</a>
+                    <p>YouTube • November 13, 2025</p>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.graphic.com.gh/entertainment/showbiz-news/pastor-kofy-sings-im-burning.html"
+                        target="_blank" rel="noopener noreferrer">Pastor Kofy sings "I'm Burning"</a>
+                    <p>Graphic Online • May 23, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Media</h2>
+            <div class="gallery">
+                <a href="https://www.youtube.com/watch?v=lj-ewqtged8" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.youtube.com/vi/lj-ewqtged8/hqdefault.jpg" alt="Praiz Experience 2025">
+                    <p>Praiz Experience 2025</p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=wMqGkDuKGtA" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.youtube.com/vi/wMqGkDuKGtA/hqdefault.jpg" alt="Praiz Experience 2024">
+                    <p>Praiz Experience 2024</p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=q716tOqfOic" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.youtube.com/vi/q716tOqfOic/hqdefault.jpg" alt="Higher">
+                    <p>Higher</p>
+                </a>
+            </div>
+            <div class="actions">
+                <a class="btn primary" href="biograpghy.html">Open Biography</a>
+                <a class="btn alt" href="index.html">Main Website</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
